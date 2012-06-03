@@ -1,0 +1,37 @@
+{
+  "name": "DES",
+  "version": "0.0.1",
+  "description": "A CoffeeScript DES implement",
+  "author": "Labi Kyo <labikyo@gmail.com>",
+  "contributors": [
+    {
+      "name": "Labi Kyo",
+      "email": "labikyo@gmail.com"
+    }
+  ],
+  "scripts": {
+    "archive": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LabiKyo/DES-Coffee"
+  },
+  "keywords": [
+    "DES"
+  ],
+  "dependencies": {
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  },
+  "license": {
+    "type": "",
+    "url": ""
+  },
+  "engine": {
+    "node": ">=0.6"
+  }
+}
+

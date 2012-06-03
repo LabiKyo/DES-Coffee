@@ -1,0 +1,16 @@
+#!/bin/sh
+coffee -o build/ -b -c src && \
+coffee -j build/des.js -b -c \
+	src/tables.coffee \
+	src/key.coffee \
+	&& \
+
+./node_modules/.bin/mocha \
+	--reporter spec \
+	--compilers coffee:coffee-script \
+	--require should \
+	--require spec/node_test_runner.js \
+	--require build/des.js \
+	--slow 75 \
+	--growl \
+	./spec/*.coffee
